@@ -24,3 +24,19 @@
 - 两个专用普通测试账号已建立，凭据由DeepSpace CLI管理，未写入仓库/日志。线上验收使用合成正文。
 - 等待：应用浏览器的GitHub二步验证由用户完成；portal URL与integration/repository具体要求仍未提供。
 - 当前共享状态：首版branch_shared；上述修复待下一次发布。未声称最终验收或portal提交完成。
+
+## 2026-11-24 18:08 UTC-08:00：实施验收完成，提交门槛待用户
+
+- 工作状态：实施与Agent验收completed；整体partial（portal与本人反馈待补）；代码branch_shared。
+- 功能冻结。最终候选代码8134468，生产发布rel_01M8874ZABT5FE82RH7C3PNQS9，build stamp 71f8471c-004d-49ae-b285-f643f3575401。上线地址https://gagaofferlite.app.space。
+- 实际验证：npm run validate通过（25项/6文件）；final live suite四项全通过31.4秒；清除复用开关后新增申请真实模型完整流程再通过22.0秒、提取3项。平台usage记录本轮真实模型成功调用共2次。
+- 覆盖：编辑四字段、确认同ID、重复确认不增量、完成/重开/备注、刷新读取；双方role=member的WS查询/更新/跨父项action隔离；自有来源不可篡改；同页退出A再登录B无旧缓存重现；空和8001字符拒绝；受控模型失败保留来源并手动保存草稿。
+- 初次手机截图发现横向溢出，使用grid minmax(0,1fr)、min-width及换行修复；最终document/main宽度断言通过，主代理和子Agent均看过最终桌面与手机图片。证据归档docs/screenshots/，只含合成资料。
+- Repository：https://github.com/elvisxtyao/GagaOfferLite，PUBLIC/main；匿名读取README 200。最初push遇GH007邮箱隐私限制，保留该保护，使用独立匿名snapshot history解决，没有重写已共享DeepSpace历史或关闭账号保护。
+- 首个GitHub快照4395a174ce98cba1a9eef63fe0641187570f3c2b对应运行source 8134468，tree 28263504a60ea6db1f2eb0e31e91d033b5936814，ls-remote核实。本轮文档补记随后共同同步，定位包含本记录的提交及其GitHub镜像commit message，不预填自身提交hash。
+- 最初普通沙盒gh auth status失败；联网重查实际认证有效，先前“GitHub登录失效”判断已纠正。未要求用户关闭任何安全保护。
+- 关键文件：src/domain（校验/模型/限额）、src/actions/index.ts（真实身份归属）、src/schemas/lite-schema.ts（私有记录）、src/pages/(app)/home.tsx与components/RequirementCard.tsx（流程）、tests/lite-live.spec.ts（最终验收）、README.md、SHORT_NOTE.md、docs/ACCEPTANCE.md。
+- Git隔离：主分支codex/gagaofferlite；后端子Agent在独立worktree工作，提交0ff61fd及2430ecd已cherry-pick为主分支d6fee6c及6684718。原GagaOffer仍在866b291，保留原有3个未提交/未跟踪路径。
+- 未完成：提交portal URL、是否要求3 integrations，以及用户本人六项线上检查未反馈。已两次在相应上下文请求portal信息，未虚构提交结果；浏览器二步验证由用户接管，未继续操作该用户页面。
+- 下一位：先获取本仓库main公开snapshot或有权限的DeepSpace source；读ACCEPTANCE和SHORT_NOTE；收到portal后核对具体字段/要求，提交现有材料并保存提交成功证据。如果要求三个真实integrations，现版本不满足，需另行范围调整；不把平台基础能力算入。
+- 已知限制：仅粘贴单份正文，来源冻结、无自动刷新/版本冲突/日历/PDF/扩展/支付/旧库迁移；模型失败回退手工；内部每日限额；无删除UI；受控失败不是真实供应商故障证据。详见README。
