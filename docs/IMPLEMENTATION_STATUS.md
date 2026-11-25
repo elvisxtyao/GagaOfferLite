@@ -1,6 +1,6 @@
 # 实施状态
 
-GagaOfferLite 的实施与 Agent 验收已完成；整个提交目标仍为 partial，等待 portal URL/要求和用户本人验证反馈。
+GagaOfferLite 的实施与 Agent 验收已完成；整个提交目标为 blocked（等待提交信息）：portal URL/要求尚未提供。用户本人验证反馈也未报告。实现和Agent验收仍为已完成。
 
 - Live：https://gagaofferlite.app.space
 - 公开代码：https://github.com/elvisxtyao/GagaOfferLite（main）；独立本地目录，不修改原 GagaOffer。
