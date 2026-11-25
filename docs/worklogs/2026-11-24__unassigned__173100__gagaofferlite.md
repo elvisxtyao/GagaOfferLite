@@ -59,3 +59,5 @@
 - 验证与共享：文档差异检查后提交并同步 DeepSpace 源仓库和 GitHub 快照；具体提交以本记录所属提交及镜像消息对应关系为准，不预填自身 SHA。Portal 仍未提交。
 
 - 本轮补读官方 DeepSpace skill、StoryNest 和 ThreadHunt 的 README，并由子 Agent 复核相关 worker/jobs；资料和对应差距记于 SUBMISSION_REQUIREMENTS.md。不把补读倒记为实现前阅读，不保证与示例同等技术广度。
+
+- 只读复核后的措辞修正：本人验证明确列举，避免把备注/刷新算入；验收中的两次模型调用限定为 Agent 自动验收时核实的数量，不是用户新测试后的当前总量；后续扩展标为可能选项，不冒称用户已指定优先级。文档 diff check 通过；前一文档源提交 adfb17c 已同步，GitHub 镜像 b7ed1ef 经远端校验一致。本措辞补记同样只影响文档。

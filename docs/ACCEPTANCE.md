@@ -26,7 +26,7 @@
 | Model failure recovery | Controlled mock outage at the model-action response; source survived refresh, manual draft saved and stayed unconfirmed | Passed; simulated failure, not a claimed real provider outage |
 | Anonymous and direct-model access | Anonymous application action returned 401; generic paid model route returned 404 | Passed |
 | Desktop/mobile layout | 1440×1100 and 390×844 screenshots; document and main scroll widths checked; visual inspection by Codex | Passed; initial mobile overflow was fixed before this run |
-| Genuine integration use | Platform usage reports two successful `openai/chat-completion` calls in this session, including the fresh final-candidate test | Verified; no sample output used as live AI |
+| Genuine integration use | Two successful `openai/chat-completion` calls were verified through platform usage during automated acceptance, including the fresh final-candidate test; this is not a current total after applicant testing | Verified; no sample output used as live AI |
 | Public source access | GitHub reports public/main; anonymous HTTP request for README returned 200; published snapshot SHA verified with `ls-remote` | Passed |
 | Original repository boundary | Original GagaOffer remains at 866b291 on its original branch with the same three pre-existing changed/untracked paths | Preserved; no old-repository edits by this work |
 | Applicant's own manual verification | User reported creating an application, running AI extraction, editing/confirming and completing an item on the live app | Core flow reported passed; notes, reopening, refresh and isolation remain agent-only evidence |
