@@ -47,3 +47,15 @@
 - 连续三个目标轮次核对后，仍未收到提交portal URL，无法确定提交表单、规则或执行提交；无其他尚未完成的独立实施工作。目标标记blocked，保留完整目标，不视为提交成功。
 - 解除条件：用户提供portal链接（以及入口要求的必要信息）；届时先核对是否必须三个真实integrations，再按实际规则提交并保留成功证据。只有一个integration的现状已公开披露。
 - 此补记仅修改交接文档，不改8134468对应的受测运行代码或部署版本。本人验证没有新反馈，仍不冒称已完成。
+
+## 2026-11-24 18:35 UTC-08:00：完整题目复核与本人验证更新
+
+- 用户已贴出完整题目、评估标准、截止时间及表单字段；不再沿用“具体要求未提供”的旧状态。实际 portal URL 仍未提供，尚无提交成功证据。
+- 截止核对：2026-11-24 23:59 Eastern = 20:59 America/Los_Angeles；五天是题目窗口，两小时是内部实施目标。
+- 确认原文冲突：正文 `there is no minimum integration count`，底部 helpful project bar `Use at least three DeepSpace integrations.` 没有依据宣称官方已裁决。仍只有一个真实 OpenAI integration，不以 auth/records/sync 凑数，不新增无明确用途的集成。
+- 用户明确反馈本人已走完“新增、AI 提取、修改确认和完成流程”。已同步 short note、README、验收及实施状态；未扩大为本人验证过备注/重开/刷新/隔离。
+- 新增 docs/SUBMISSION_REQUIREMENTS.md，逐项核对 full-stack、技术深度、范围、集成、agent 贡献、本人验证、代码可访问性、保密、后续 live coding 和提交字段。
+- 本轮仅修改文档；运行代码仍为 8134468，部署版本和之前验收有效。不重复调用真实模型或重新部署。
+- 验证与共享：文档差异检查后提交并同步 DeepSpace 源仓库和 GitHub 快照；具体提交以本记录所属提交及镜像消息对应关系为准，不预填自身 SHA。Portal 仍未提交。
+
+- 本轮补读官方 DeepSpace skill、StoryNest 和 ThreadHunt 的 README，并由子 Agent 复核相关 worker/jobs；资料和对应差距记于 SUBMISSION_REQUIREMENTS.md。不把补读倒记为实现前阅读，不保证与示例同等技术广度。

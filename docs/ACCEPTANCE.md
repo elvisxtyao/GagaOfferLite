@@ -1,6 +1,6 @@
 # Acceptance evidence
 
-**Automated implementation acceptance passed on 2026-11-24.** Portal submission and the developer's own manual verification remain separate, unfinished gates.
+**Automated implementation acceptance passed on 2026-11-24.** The applicant subsequently reported completing the core live flow personally. Portal submission remains unfinished; the supplied integration-count instructions conflict.
 
 - Final live URL: https://gagaofferlite.app.space
 - Deployed source: `8134468da30ee37b3ea45d98b581c1b83fd14472` on DeepSpace `codex/gagaofferlite`.
@@ -29,8 +29,8 @@
 | Genuine integration use | Platform usage reports two successful `openai/chat-completion` calls in this session, including the fresh final-candidate test | Verified; no sample output used as live AI |
 | Public source access | GitHub reports public/main; anonymous HTTP request for README returned 200; published snapshot SHA verified with `ls-remote` | Passed |
 | Original repository boundary | Original GagaOffer remains at 866b291 on its original branch with the same three pre-existing changed/untracked paths | Preserved; no old-repository edits by this work |
-| Developer's own manual verification | Platform login completed; no report of all six product checks | Not yet reported |
-| Submission portal | URL and exact submission requirements have not been supplied | Not submitted |
+| Applicant's own manual verification | User reported creating an application, running AI extraction, editing/confirming and completing an item on the live app | Core flow reported passed; notes, reopening, refresh and isolation remain agent-only evidence |
+| Submission portal | Full exercise and form labels supplied; actual portal URL still absent. Body says no minimum integration count; helpful bar says at least three | Not submitted; no three-integration compliance claimed |
 
 ## Reproduce
 

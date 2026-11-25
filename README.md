@@ -82,13 +82,13 @@ This reduces import transactions and duplicate-generation problems. It deliberat
 - AI extraction runs only while the Application has no requirements. A failed partial database write reports how many drafts were saved; inspect those items and add anything missing manually. Accepted work is never overwritten by a model retry.
 - This is a demo-sized app. There is no source-change watcher, audit history, deletion UI or cross-tab merge/conflict workflow.
 - Paste application instructions only. Do not include passwords or applicant personal data. Extraction sends source text to OpenAI through DeepSpace.
-- A portal-specific requirement for three integrations has not been established and is not satisfied by this single-integration version.
+- The supplied exercise text is inconsistent: its body says there is no minimum integration count, but its “helpful project bar” says at least three. This version uses one real integration and does not claim to meet a three-integration threshold. See [the requirements review](docs/SUBMISSION_REQUIREMENTS.md).
 
 ## Verification and provenance
 
 See [acceptance](docs/ACCEPTANCE.md) for actual results and remaining gates, and [short note](SHORT_NOTE.md) for submission text.
 
-The original [GagaOffer](https://github.com/elvisxtyao/GagaOffer) supplied the domain ideas: source-backed requirements, human confirmation, completion/reopening, and separate source/personal dates. This repository implements a new DeepSpace flow with a smaller schema; it does not import the original API, database or full revision/risk engine. Development and automated checks were performed by Codex. Developer-performed online checks are recorded separately, only when actually reported.
+The original [GagaOffer](https://github.com/elvisxtyao/GagaOffer) supplied the domain ideas: source-backed requirements, human confirmation, completion/reopening, and separate source/personal dates. This repository implements a new DeepSpace flow with a smaller schema; it does not import the original API, database or full revision/risk engine. Development and automated checks were performed by Codex. The applicant personally reported completing application creation, real AI extraction, editing and confirmation, and marking an item complete on the live app. Notes, reopening, refresh and two-account isolation are agent-verified; they are not claimed as applicant-performed checks.
 
 
 
